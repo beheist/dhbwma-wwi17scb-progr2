@@ -1,7 +1,7 @@
-package collections.ex1_uni;
+package ex2_uni_with_generics;
 
-@SuppressWarnings("Duplicates")
 public class Main {
+    @SuppressWarnings("Duplicates")
     public static void main(String[] args) {
         // Uni anlegen
         Universitaet dhbw = new Universitaet();
