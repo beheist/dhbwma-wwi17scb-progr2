@@ -1,6 +1,5 @@
-package collections.sortierung;
+package collections.ex3_sortierung;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.TreeSet;
 

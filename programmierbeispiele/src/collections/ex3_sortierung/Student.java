@@ -1,4 +1,4 @@
-package collections.sortierung;
+package collections.ex3_sortierung;
 
 public class Student implements Comparable<Student> {
     private String vorname;
