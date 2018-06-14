@@ -1,6 +1,8 @@
 package collections.ex5_hashmap;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
 
 public class HashMapContainsDemo {
     public static void main(String[] args) {
@@ -14,6 +16,13 @@ public class HashMapContainsDemo {
 
         System.out.println(map.containsValue(klaus));
         System.out.println(map.containsValue(new Student("Klaus", "Klausen", "123456")));
+        System.out.println("----------------------");
 
+        Set<Integer> keys = map.keySet();
+        Iterator<Integer> it = keys.iterator();
+        while (it.hasNext()) {
+            Student s = map.get(it.next());
+            s.print();
+        }
     }
 }

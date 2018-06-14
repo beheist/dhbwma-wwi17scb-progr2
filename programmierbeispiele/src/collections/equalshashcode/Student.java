@@ -1,7 +1,5 @@
 package collections.ex5_hashmap;
 
-import java.util.Objects;
-
 public class Student implements Comparable<Student> {
     private String vorname;
     private String nachname;
@@ -33,8 +31,7 @@ public class Student implements Comparable<Student> {
     }
 
     public int hashCode() {
-        return Objects.hash(matrikelNr, vorname, nachname);
-//        return this.getMatrikelNr().hashCode() ^ this.getVorname().hashCode() ^ this.getNachname().hashCode();
+        return this.getMatrikelNr().hashCode() ^ this.getVorname().hashCode() ^ this.getNachname().hashCode();
     }
 
     public void print() {
