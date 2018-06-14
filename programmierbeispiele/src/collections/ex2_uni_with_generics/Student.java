@@ -1,4 +1,4 @@
-package ex2_uni_with_generics;
+package collections.ex2_uni_with_generics;
 
 import java.util.ArrayList;
 import java.util.Iterator;

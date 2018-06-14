@@ -1,4 +1,4 @@
-package ex2_uni_with_generics;
+package collections.ex2_uni_with_generics;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,8 +11,8 @@ public class Universitaet {
 
     public Universitaet()
     {
-        studenten = new ArrayList<Student>();
-        vorlesungen = new ArrayList<Vorlesung>();
+        studenten = new ArrayList<>();
+        vorlesungen = new ArrayList<>();
     }
 
     public String getName() {

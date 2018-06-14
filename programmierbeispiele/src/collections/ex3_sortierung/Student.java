@@ -12,7 +12,9 @@ public class Student implements Comparable<Student> {
     }
 
     public int compareTo(Student s) {
-        return Integer.parseInt(matrikelNr) - Integer.parseInt(s.getMatrikelNr());
+        int eigeneMatrikelNr = Integer.parseInt(matrikelNr);
+        int vergleichsMatrikelNr = Integer.parseInt(s.matrikelNr);
+        return eigeneMatrikelNr - vergleichsMatrikelNr;
     }
 
     public void print() {
