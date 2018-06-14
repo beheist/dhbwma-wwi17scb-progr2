@@ -4,6 +4,7 @@ import collections.ex3_sortierung.Student;
 import collections.ex4_comparator.StudentComparator;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class ListSortingDemo {
@@ -19,16 +20,19 @@ public class ListSortingDemo {
         list.add(helga);
 
         Iterator<Student> it = list.iterator();
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             Student s = it.next();
             s.print();
         }
 
         System.out.println();
+
+        // The statements below are equivalent
         list.sort(new StudentComparator());
+//        Collections.sort(list, new StudentComparator());
 
         it = list.iterator();
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             Student s = it.next();
             s.print();
         }
