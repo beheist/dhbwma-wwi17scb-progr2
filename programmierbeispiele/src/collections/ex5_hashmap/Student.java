@@ -13,6 +13,10 @@ public class Student implements Comparable<Student> {
         this.matrikelNr = matrikelNr;
     }
 
+    public String toString(){
+        return vorname + " " + nachname + " " + matrikelNr;
+    }
+
     public int compareTo(Student s) {
         return Integer.parseInt(matrikelNr) - Integer.parseInt(s.getMatrikelNr());
     }
