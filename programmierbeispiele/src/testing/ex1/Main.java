@@ -1,4 +1,4 @@
-package collections.ex2_uni_with_generics;
+package testing.ex1;
 
 public class Main {
     @SuppressWarnings("Duplicates")
