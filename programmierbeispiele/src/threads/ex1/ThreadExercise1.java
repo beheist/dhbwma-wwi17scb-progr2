@@ -36,13 +36,15 @@ public class ThreadExercise1 {
         Runnable task = new Runnable() {
             @Override
             public void run() {
-                for (boolean shouldContinue = true; shouldContinue; shouldContinue = appendNext()) {
+                boolean shouldContinue;
+                do {
+                    shouldContinue = appendNext();
                     try {
                         Thread.sleep(200);
                     } catch (InterruptedException ex) {
                         //
                     }
-                }
+                } while (shouldContinue);
             }
         };
 
